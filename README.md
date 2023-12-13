@@ -5,6 +5,7 @@ This repository includes a library for representing an Aheui program's execution
 
 ## Differences from Reference Implementation
 This implementation was written from scratch, only making use of the Aheui documentation and the [reference JavaScript implementation](http://aheui.github.io/jsaheui/jsaheui_en.html) without consulting its code. Because this implementation uses Rust and runs exclusively in the command line, it has some differences from the reference implementation:
+* The extension protocol, which currently has no defined behavior in the documentation, acts as another queue storage structure.
 * When a program prompts for user input (either a number or single character), the entire output is flushed with a newline character before prompting the user for an input.
 * If the user provides an invalid input (e.g. blank input or a non-number input when prompted for a number), the interpreter will warn the user about their invalid input and prompt them once again.
 * Attempting to push an invalid UTF-8 character to output is a fatal error that will terminate
