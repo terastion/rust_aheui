@@ -12,7 +12,7 @@ fn main() {
     }
 
     let filename = &args[1];
-    let mut f = File::open(filename).expect("file opening error!");
+    let mut f = File::open(filename).expect("error opening file!");
     let mut buffer = String::new();
 
     f.read_to_string(&mut buffer).unwrap();

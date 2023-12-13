@@ -45,7 +45,7 @@ fn test_basic_operator() {
 
 #[test]
 fn test_construct_program() {
-    let mut f = File::open("tests/uneven.ah").unwrap();
+    let mut f = File::open("tests/hello.ah").unwrap();
     let mut buffer = String::new();
 
     f.read_to_string(&mut buffer);
@@ -79,7 +79,7 @@ fn test_pa() {
 
 #[test]
 fn test_hello_world() {
-    let mut f = File::open("tests/poem.ah").unwrap();
+    let mut f = File::open("tests/hello.ah").unwrap();
     let mut buffer = String::new();
 
     f.read_to_string(&mut buffer);
